@@ -1,0 +1,22 @@
+.botao {
+  display: block;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 4px;
+  width: 140px;
+  text-align: center;
+  font-size: 1.2rem;
+  color: rgb(46, 35, 4);
+  background-color: rgb(228, 168, 4);
+  border: 2px solid rgb(255, 210, 86);
+  box-shadow: inset 0px 0px 2px rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+.botao:hover {
+  background-color: rgb(253, 186, 0);
+}
+
+.botao:disabled {
+  background-color: rgb(228, 199, 120);
+}

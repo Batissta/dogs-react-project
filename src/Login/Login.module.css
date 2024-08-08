@@ -1,0 +1,24 @@
+.loginContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  min-height: 100vh;
+}
+.loginContainer img {
+  height: calc(120vh - 4rem);
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.formulario {
+  padding: 0px 15px;
+  margin-top: 15vh;
+}
+@media (width < 640px) {
+  .loginContainer {
+    grid-template-columns: 1fr;
+  }
+  .loginContainer img {
+    display: none;
+  }
+}

@@ -1,0 +1,39 @@
+.headerBg {
+  box-shadow: 0px 1px 0px #1212123f;
+  position: fixed;
+  background-color: #fff;
+  z-index: 10;
+  top: 0;
+  width: 100%;
+}
+
+.header {
+  height: 4rem;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.headerLogo {
+  padding: 15px;
+}
+.headerLogoImagem {
+  transition: 0.1s;
+}
+.headerLogo:hover .headerLogoImagem {
+  transform: scale(1.2);
+}
+.linkHeader {
+  padding: 15px;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 0.825rem;
+}
+
+.linkHeaderImg {
+  transition: transform 10ms;
+}
+.linkHeader:hover .linkHeaderImg {
+  transform: scale(1.1);
+}

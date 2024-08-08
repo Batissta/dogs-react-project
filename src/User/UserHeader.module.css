@@ -1,0 +1,9 @@
+.header:global(.container) {
+  display: grid;
+  position: relative;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  padding: 0 40px;
+}

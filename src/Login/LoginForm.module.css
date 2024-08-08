@@ -1,0 +1,15 @@
+.esqueceuSenha {
+  padding: 0 6px;
+  margin-top: 24px;
+  text-decoration: underline;
+  width: fit-content;
+}
+.cadastro {
+  margin-top: 64px;
+}
+.cadastro p {
+  font-weight: 900;
+  letter-spacing: 0.1px;
+  font-size: 1.175rem;
+  color: #c4930f;
+}
