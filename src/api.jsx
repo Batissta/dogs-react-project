@@ -72,3 +72,72 @@ export const FOTOS_GET = ({ page, total, user }) => {
     },
   };
 };
+
+export const FOTOSINGLE_GET = (id) => {
+  return {
+    url: `${API_URL}/api/photo/${id}`,
+  };
+};
+
+export const FOTO_GET = (id) => {
+  return {
+    url: `${API_URL}/api/photo/${id}`,
+    options: {
+      method: 'GET',
+      cache: 'no-store',
+    },
+  };
+};
+
+export const COMMENT_POST = (id, body) => {
+  return {
+    url: `${API_URL}/api/comment/${id}`,
+    options: {
+      method: 'POST',
+      cache: 'no-store',
+      headers: {
+        'Content-type': 'application/json',
+        Authorization: 'Bearer ' + window.localStorage.getItem('token'),
+      },
+      body: JSON.stringify(body),
+    },
+  };
+};
+
+export const FOTO_DELETE = (id) => {
+  return {
+    url: `${API_URL}/api/photo/${id}`,
+    options: {
+      method: 'DELETE',
+      headers: {
+        Authorization: 'Bearer ' + window.localStorage.getItem('token'),
+      },
+    },
+  };
+};
+
+export const PASSWORD_LOST = (body) => {
+  return {
+    url: `${API_URL}/api/password/lost`,
+    options: {
+      method: 'POST',
+      headers: {
+        'Content-type': 'application/json',
+      },
+      body: JSON.stringify(body),
+    },
+  };
+};
+
+export const PASSWORD_RESET = (body) => {
+  return {
+    url: `${API_URL}/api/password/reset`,
+    options: {
+      method: 'POST',
+      headers: {
+        'Content-type': 'application/json',
+      },
+      body: JSON.stringify(body),
+    },
+  };
+};

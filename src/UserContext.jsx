@@ -65,9 +65,8 @@ export const UserStorage = ({ children }) => {
         }
       } else {
         setLoading(true);
-        setTimeout(() => {
-          userLogout();
-        }, 2000);
+        setLogin(false);
+        setLoading(false);
       }
     };
     autoLogin();

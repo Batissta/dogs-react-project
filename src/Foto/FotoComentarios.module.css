@@ -1,0 +1,20 @@
+.comentario {
+  overflow-y: auto;
+  word-break: break-word;
+  padding: 0 2rem;
+}
+.single.comentario {
+  padding: 0px;
+}
+
+.comentario li {
+  margin-bottom: 0.5rem;
+  line-height: 1.2;
+}
+
+@media (width <= 64rem) {
+  .single.comentario {
+    min-height: 60px;
+    padding: 0px;
+  }
+}

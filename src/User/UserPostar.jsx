@@ -6,6 +6,7 @@ import useForm from '../Hooks/useForm.jsx';
 import useFetch from '../Hooks/useFetch.jsx';
 import { FOTO_POST } from '../api.jsx';
 import { useNavigate } from 'react-router-dom';
+import Head from '../helper/Head.jsx';
 
 const UserPostar = () => {
   const nome = useForm();
@@ -60,6 +61,7 @@ const UserPostar = () => {
           ></div>
         )}
       </div>
+      <Head title="Poste sua foto" />
     </section>
   );
 };

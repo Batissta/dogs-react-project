@@ -6,6 +6,7 @@ import useForm from '../Hooks/useForm';
 import { USER_POST } from '../api';
 import { UserContext } from '../UserContext';
 import useFetch from '../Hooks/useFetch';
+import Head from '../helper/Head';
 
 const LoginCadastrar = () => {
   const username = useForm('');
@@ -48,6 +49,7 @@ const LoginCadastrar = () => {
         {!loading && <Botao>Cadastrar</Botao>}
         {error && <p className="error">{error}</p>}
       </form>
+      <Head title="Crie sua conta" />
     </div>
   );
 };

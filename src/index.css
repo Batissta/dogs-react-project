@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Spectral:wght@700&display=swap');
 * {
+  --type-first: 'Spectral', Georgia;
   box-sizing: border-box;
 }
 
@@ -45,7 +46,7 @@ label {
   margin: 0 auto;
 }
 .mainContainer {
-  margin-top: 4rem;
+  margin-top: 2rem;
 }
 .error {
   text-wrap: wrap;
@@ -74,6 +75,11 @@ label {
   bottom: 5px;
   border-radius: 0.2rem;
   z-index: -10;
+}
+@media (width <= 445px) {
+  .title {
+    font-size: 2.125rem;
+  }
 }
 .subtitle {
   font-family: 'Spectral', Georgia;
@@ -109,4 +115,14 @@ label {
   100% {
     rotate: 720deg;
   }
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh + 10rem);
+}
+
+.AppBody {
+  flex: 1;
 }

@@ -15,7 +15,7 @@
   overflow: hidden;
   cursor: pointer;
 }
-.foto img {
+.foto > div {
   grid-area: 1/1;
 }
 

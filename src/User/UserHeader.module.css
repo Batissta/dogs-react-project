@@ -3,6 +3,7 @@
   position: relative;
   grid-template-columns: 1fr auto;
   align-items: center;
+  gap: 1rem;
   margin-top: 1rem;
   margin-bottom: 2rem;
   padding: 0 40px;

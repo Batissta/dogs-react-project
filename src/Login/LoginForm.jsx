@@ -7,6 +7,7 @@ import Input from '../Components/forms/Input.jsx';
 import Botao from '../Components/forms/Botao.jsx';
 import useForm from '../Hooks/useForm.jsx';
 import { UserContext } from '../UserContext.jsx';
+import Head from '../helper/Head.jsx';
 
 const LoginForm = () => {
   const username = useForm('');
@@ -46,6 +47,7 @@ const LoginForm = () => {
         >
           Cadastrar
         </Link>
+        <Head title="Faça o seu Login" />
       </div>
     </div>
   );
