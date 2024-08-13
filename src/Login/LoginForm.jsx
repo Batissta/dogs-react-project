@@ -21,7 +21,7 @@ const LoginForm = () => {
     }
   };
   return (
-    <div className={stylesLog.formulario}>
+    <section className={stylesLog.formulario}>
       <form onSubmit={handleSubmit} autoComplete="off">
         <h1 className={'title'}>Login</h1>
         <Input label={'Usuário'} type={'text'} name={'user'} {...username} />
@@ -32,7 +32,7 @@ const LoginForm = () => {
           </Botao>
         )}
         {!loading && <Botao>Entrar</Botao>}
-        {error && <p className="error">{error}</p>}
+        {error && <p className="error">{error && 'Dados Incorretos.'}</p>}
       </form>
       <Link to="recuperar" className={styles.esqueceuSenha}>
         Perdeu a senha?
@@ -49,7 +49,7 @@ const LoginForm = () => {
         </Link>
         <Head title="Faça o seu Login" />
       </div>
-    </div>
+    </section>
   );
 };
 

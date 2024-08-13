@@ -141,3 +141,15 @@ export const PASSWORD_RESET = (body) => {
     },
   };
 };
+
+export const STATS_GET = (id) => {
+  return {
+    url: `${API_URL}/api/stats`,
+    options: {
+      method: 'GET',
+      headers: {
+        Authorization: 'Bearer ' + window.localStorage.getItem('token'),
+      },
+    },
+  };
+};

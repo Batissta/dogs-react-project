@@ -30,7 +30,7 @@ const LoginCadastrar = () => {
   };
 
   return (
-    <div className={styles.formulario}>
+    <section className={styles.formulario}>
       <form onSubmit={handleSubmit} autoComplete="off">
         <h1 className={'title'}>Cadastre-se</h1>
         <Input
@@ -50,7 +50,7 @@ const LoginCadastrar = () => {
         {error && <p className="error">{error}</p>}
       </form>
       <Head title="Crie sua conta" />
-    </div>
+    </section>
   );
 };
 

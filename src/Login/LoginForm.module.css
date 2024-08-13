@@ -5,7 +5,8 @@
   width: fit-content;
 }
 .cadastro {
-  margin-top: 64px;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
 }
 .cadastro p {
   font-weight: 900;

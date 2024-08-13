@@ -24,7 +24,7 @@ const LoginRecuperar = () => {
     // navigate('/login');
   };
   return (
-    <div className={styles.formulario}>
+    <section className={styles.formulario}>
       <Head title="Perdeu a Senha" />
 
       <h1 className={'title'}>Recuperar senha</h1>
@@ -46,7 +46,7 @@ const LoginRecuperar = () => {
           )}
         </form>
       )}
-    </div>
+    </section>
   );
 };
 

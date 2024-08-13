@@ -5,6 +5,12 @@
   margin-bottom: 2rem;
 }
 
+@media (width < 40rem) {
+  .fotoPost:global(.container.mainContainer) {
+    grid-template-columns: 1fr;
+  }
+}
+
 .fotoPost:global(.container.mainContainer) input[type='file'] {
   margin-bottom: 1rem;
 }

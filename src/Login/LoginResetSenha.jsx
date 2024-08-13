@@ -36,7 +36,7 @@ const LoginResetSenha = () => {
     if (login) setLogin(login);
   }, []);
   return (
-    <div className={styles.formulario}>
+    <section className={styles.formulario}>
       <Head title="Crie uma nova senha" />
 
       <h1 className="title">Resete a Senha</h1>
@@ -56,7 +56,7 @@ const LoginResetSenha = () => {
         )}
         {error && <p className="error">{error}</p>}
       </form>
-    </div>
+    </section>
   );
 };
 
